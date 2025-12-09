@@ -175,35 +175,25 @@ async def add_sample_data(db):
     # Товары
     products = [
         # Электроника
-        ("iPhone 15 Pro", "iphone-15-pro", "Флагманский смартфон Apple с чипом A17 Pro", 129990, 139990, 1, "📱", 50,
-         4.9, 128, 1),
-        ("MacBook Air M3", "macbook-air-m3", "Тонкий и легкий ноутбук с процессором M3", 149990, None, 1, "💻", 30, 4.8,
-         85, 1),
-        ("AirPods Pro 2", "airpods-pro-2", "Беспроводные наушники с активным шумоподавлением", 24990, 27990, 1, "🎧",
-         100, 4.7, 256, 1),
-        ("Apple Watch Ultra 2", "apple-watch-ultra-2", "Премиальные смарт-часы для спорта", 89990, None, 1, "⌚", 25,
-         4.9, 64, 1),
+        ("iPhone 15 Pro", "iphone-15-pro", "Флагманский смартфон Apple с чипом A17 Pro", 129990, 139990, 1, "📱", 50, 4.9, 128, 1),
+        ("MacBook Air M3", "macbook-air-m3", "Тонкий и легкий ноутбук с процессором M3", 149990, None, 1, "💻", 30, 4.8, 85, 1),
+        ("AirPods Pro 2", "airpods-pro-2", "Беспроводные наушники с активным шумоподавлением", 24990, 27990, 1, "🎧", 100, 4.7, 256, 1),
+        ("Apple Watch Ultra 2", "apple-watch-ultra-2", "Премиальные смарт-часы для спорта", 89990, None, 1, "⌚", 25, 4.9, 64, 1),
         ("iPad Pro 12.9", "ipad-pro-12", "Профессиональный планшет с M2", 109990, 119990, 1, "📱", 40, 4.8, 92, 0),
-        ("Samsung Galaxy S24 Ultra", "samsung-s24-ultra", "Флагман Samsung с AI функциями", 119990, None, 1, "📱", 45,
-         4.7, 156, 1),
+        ("Samsung Galaxy S24 Ultra", "samsung-s24-ultra", "Флагман Samsung с AI функциями", 119990, None, 1, "📱", 45, 4.7, 156, 1),
         ("Sony WH-1000XM5", "sony-wh1000xm5", "Лучшие беспроводные наушники", 34990, 39990, 1, "🎧", 60, 4.8, 312, 0),
-        ("Nintendo Switch OLED", "nintendo-switch-oled", "Игровая консоль с OLED экраном", 29990, None, 1, "🎮", 35, 4.6,
-         178, 0),
+        ("Nintendo Switch OLED", "nintendo-switch-oled", "Игровая консоль с OLED экраном", 29990, None, 1, "🎮", 35, 4.6, 178, 0),
 
         # Одежда
-        ("Худи Nike Premium", "nike-hoodie-premium", "Комфортное худи из органического хлопка", 7990, 9990, 2, "👕", 200,
-         4.5, 89, 1),
-        ("Кроссовки Adidas Ultraboost", "adidas-ultraboost", "Беговые кроссовки с технологией Boost", 15990, 18990, 2,
-         "👟", 80, 4.7, 234, 1),
+        ("Худи Nike Premium", "nike-hoodie-premium", "Комфортное худи из органического хлопка", 7990, 9990, 2, "👕", 200, 4.5, 89, 1),
+        ("Кроссовки Adidas Ultraboost", "adidas-ultraboost", "Беговые кроссовки с технологией Boost", 15990, 18990, 2, "👟", 80, 4.7, 234, 1),
         ("Джинсы Levi's 501", "levis-501", "Классические джинсы прямого кроя", 8990, None, 2, "👖", 150, 4.6, 167, 0),
         ("Пуховик North Face", "north-face-puffer", "Теплый зимний пуховик", 24990, 29990, 2, "🧥", 40, 4.8, 78, 1),
 
         # Дом и сад
-        ("Кофемашина DeLonghi", "delonghi-coffee", "Автоматическая кофемашина для дома", 49990, 59990, 3, "☕", 25, 4.9,
-         156, 1),
+        ("Кофемашина DeLonghi", "delonghi-coffee", "Автоматическая кофемашина для дома", 49990, 59990, 3, "☕", 25, 4.9, 156, 1),
         ("Робот-пылесос Xiaomi", "xiaomi-vacuum", "Умный пылесос с лидаром", 29990, 34990, 3, "🤖", 50, 4.6, 289, 1),
-        ("Набор постельного белья", "bed-linen-set", "Постельное белье из египетского хлопка", 5990, 7990, 3, "🛏️", 100,
-         4.4, 67, 0),
+        ("Набор постельного белья", "bed-linen-set", "Постельное белье из египетского хлопка", 5990, 7990, 3, "🛏️", 100, 4.4, 67, 0),
         ("LED гирлянда", "led-garland", "Праздничная гирлянда 10 метров", 1290, 1590, 3, "💡", 300, 4.3, 45, 0),
 
         # Спорт
@@ -213,19 +203,14 @@ async def add_sample_data(db):
         ("Велосипед горный", "mountain-bike", "21-скоростной горный велосипед", 34990, 39990, 4, "🚴", 15, 4.8, 56, 1),
 
         # Книги
-        ("Атомные привычки", "atomic-habits", "Джеймс Клир — книга о формировании привычек", 890, 990, 5, "📖", 500, 4.9,
-         1256, 1),
-        ("Думай медленно, решай быстро", "thinking-fast-slow", "Даниэль Канеман о принятии решений", 790, None, 5, "📖",
-         300, 4.8, 892, 0),
-        ("Python для начинающих", "python-beginners", "Полное руководство по Python", 1290, 1490, 5, "📖", 200, 4.7, 234,
-         1),
+        ("Атомные привычки", "atomic-habits", "Джеймс Клир — книга о формировании привычек", 890, 990, 5, "📖", 500, 4.9, 1256, 1),
+        ("Думай медленно, решай быстро", "thinking-fast-slow", "Даниэль Канеман о принятии решений", 790, None, 5, "📖", 300, 4.8, 892, 0),
+        ("Python для начинающих", "python-beginners", "Полное руководство по Python", 1290, 1490, 5, "📖", 200, 4.7, 234, 1),
 
         # Красота
-        ("Набор уходовой косметики", "skincare-set", "Комплексный набор для ухода за кожей", 4990, 6990, 6, "✨", 100,
-         4.6, 178, 1),
+        ("Набор уходовой косметики", "skincare-set", "Комплексный набор для ухода за кожей", 4990, 6990, 6, "✨", 100, 4.6, 178, 1),
         ("Парфюм Chanel", "chanel-perfume", "Культовый аромат Chanel N°5", 12990, None, 6, "💐", 30, 4.9, 89, 1),
-        ("Фен Dyson Supersonic", "dyson-supersonic", "Профессиональный фен для волос", 44990, 49990, 6, "💨", 20, 4.8,
-         167, 0),
+        ("Фен Dyson Supersonic", "dyson-supersonic", "Профессиональный фен для волос", 44990, 49990, 6, "💨", 20, 4.8, 167, 0),
     ]
 
     for p in products:
@@ -286,6 +271,12 @@ async def update_user(user_id: int, **kwargs):
         await db.commit()
 
 
+async def get_all_users() -> List[Dict]:
+    async with get_db() as db:
+        cursor = await db.execute("SELECT * FROM users ORDER BY created_at DESC")
+        return [dict(row) for row in await cursor.fetchall()]
+
+
 # ═══════════════════════════════════════════════════════════════
 # КАТЕГОРИИ
 # ═══════════════════════════════════════════════════════════════
@@ -309,18 +300,25 @@ async def get_category_by_slug(slug: str) -> Optional[Dict]:
         return dict(row) if row else None
 
 
+async def get_category_by_id(category_id: int) -> Optional[Dict]:
+    async with get_db() as db:
+        cursor = await db.execute("SELECT * FROM categories WHERE id = ?", (category_id,))
+        row = await cursor.fetchone()
+        return dict(row) if row else None
+
+
 # ═══════════════════════════════════════════════════════════════
 # ТОВАРЫ
 # ═══════════════════════════════════════════════════════════════
 
 async def get_products(
-        category_id: int = None,
-        search: str = None,
-        min_price: float = None,
-        max_price: float = None,
-        sort: str = "popular",
-        limit: int = 50,
-        offset: int = 0
+    category_id: int = None,
+    search: str = None,
+    min_price: float = None,
+    max_price: float = None,
+    sort: str = "popular",
+    limit: int = 50,
+    offset: int = 0
 ) -> List[Dict]:
     async with get_db() as db:
         sql = """
@@ -361,6 +359,17 @@ async def get_products(
         params.extend([limit, offset])
 
         cursor = await db.execute(sql, params)
+        return [dict(row) for row in await cursor.fetchall()]
+
+
+async def get_all_products_admin() -> List[Dict]:
+    async with get_db() as db:
+        cursor = await db.execute("""
+            SELECT p.*, c.name as category_name
+            FROM products p
+            LEFT JOIN categories c ON p.category_id = c.id
+            ORDER BY p.created_at DESC
+        """)
         return [dict(row) for row in await cursor.fetchall()]
 
 
@@ -445,10 +454,10 @@ async def add_to_cart(user_id: int, product_id: int, quantity: int = 1):
         existing = await cursor.fetchone()
 
         if existing:
-            new_qty = existing['quantity'] + quantity
+            new_qty = existing[1] + quantity
             await db.execute(
                 "UPDATE cart_items SET quantity = ? WHERE id = ?",
-                (new_qty, existing['id'])
+                (new_qty, existing[0])
             )
         else:
             await db.execute(
@@ -534,7 +543,7 @@ async def toggle_favorite(user_id: int, product_id: int) -> bool:
         existing = await cursor.fetchone()
 
         if existing:
-            await db.execute("DELETE FROM favorites WHERE id = ?", (existing['id'],))
+            await db.execute("DELETE FROM favorites WHERE id = ?", (existing[0],))
             await db.commit()
             return False
         else:
@@ -651,7 +660,19 @@ async def get_all_orders(status: str = None, limit: int = 50) -> List[Dict]:
         params.append(limit)
 
         cursor = await db.execute(sql, params)
-        return [dict(row) for row in await cursor.fetchall()]
+        orders = []
+        for row in await cursor.fetchall():
+            order = dict(row)
+            # Получаем товары заказа
+            items_cursor = await db.execute("""
+                SELECT oi.*, p.name, p.image
+                FROM order_items oi
+                JOIN products p ON oi.product_id = p.id
+                WHERE oi.order_id = ?
+            """, (order['id'],))
+            order['items'] = [dict(item) for item in await items_cursor.fetchall()]
+            orders.append(order)
+        return orders
 
 
 async def update_order_status(order_id: int, status: str):
@@ -712,9 +733,9 @@ async def get_stats() -> Dict:
 
         # Заказы по статусам
         cursor = await db.execute("""
-            SELECT status, COUNT(*) FROM orders GROUP BY status
+            SELECT status, COUNT(*) as cnt FROM orders GROUP BY status
         """)
-        stats['orders_by_status'] = {row['status']: row[1] for row in await cursor.fetchall()}
+        stats['orders_by_status'] = {row[0]: row[1] for row in await cursor.fetchall()}
 
         # Пользователи
         cursor = await db.execute("SELECT COUNT(*) FROM users WHERE is_admin = 0")
