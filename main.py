@@ -1,8 +1,4 @@
-# main.py
-"""
-🛒 Маркетплейс - Полноценный интернет-магазин
-FastAPI + SQLite + Современный UI
-"""
+
 
 from fastapi import FastAPI, Request, Form, HTTPException
 from fastapi.responses import HTMLResponse, RedirectResponse, JSONResponse
